@@ -1,0 +1,31 @@
+@use "media_queries"
+
+@include media_queries.mq-pc
+
+    body
+        display: grid
+        place-content: center
+        min-height: 100vh
+
+    .testimonials
+        max-height: auto
+        max-width: auto
+        margin: auto 7.5rem
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+
+    #daniel
+        grid-area: 1 / 1 / span 1 / span 2
+
+    #jonathan
+        grid-area: 1 / 3 / span 1 / span 1
+
+    #kira
+        grid-area: 1 / 4 / span 2 / span 1
+
+    #jeanette
+        grid-area: 2 / 1 / span 1 / span 1
+
+    #patrick
+        grid-area: 2 / 2 / span 1 / span 2
